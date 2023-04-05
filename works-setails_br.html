@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Google Fots -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <!-- Remixicon Icon -->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      <!-- Remixicon Icon -->
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- Main CSS -->
+      <link href="assets/css/main.css" rel="stylesheet">
+
+
+    <title>Lucas Henriques</title>
+  </head>
+  <body>
+   
+    <!-- header -->
+    <header class="ds-header" id="site-header">
+        <div class="container">
+            <div class="ds-header-inner">
+              <!-- logo -->
+              <a href="index.html" class="ds-logo">
+                <span>L</span>Lucas Henriques
+              </a>
+              <!-- logo -->
+              <!-- social -->
+              <ul class="ds-social">
+                <li><a href="https://github.com/Sanamakk/Sales_Dashboard_With_Python" target="_blank"><i class="ri-github-fill"></i></a></li>
+                <li><a href="https://stackoverflow.com/users/21573289/lucas-h-silva" target="_blank"><i class="ri-stack-overflow-line"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/lucashs-work/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+                <li><a href="works-setails.html" target="_blank"><img src="https://flagcdn.com/32x24/us.png" alt="US Flag"></a></li>
+              </ul>
+              <!-- social -->
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+   
+   <main class="ds-main-section">
+     <div class="container">
+        <div class="ds-work-details-section">
+            <div class="text-center">
+              <a href="index.html" class="ds-button ds-arrow-button"><i class="ri-arrow-left-s-line"></i> BAck</a>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                  <header class="ds-work-det-hed">
+                      <h1 class="ds-work-det-title">Sales Dashboard com Python</h1>
+                      <span class="ds-work-det-dep">Data development - 2022</span>
+                  </header>
+                  <figure style="display:flex; justify-content:center; align-items:center;"><img src="assets/images/Sales_Dashboard_1.jpeg"></figure>
+                  <div class="ds-work-content-sec">
+                      <div class="row justify-content-center">
+                          <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                              <p>Este código é uma aplicação de visualização de dados que utiliza as bibliotecas pandas, plotly.express e streamlit. O objetivo da aplicação é exibir um painel de vendas com informações como vendas totais, avaliação média, vendas por linha de produto e vendas por hora. A aplicação lê um arquivo Excel e usa filtros na barra lateral para que o usuário possa selecionar a cidade, o tipo de cliente e o gênero para visualizar os dados correspondentes.</p>
+
+                              <p>Por meio de gráficos de barras, pizza e linhas interativos, o usuário pode facilmente visualizar como as vendas são distribuídas por linha de produto e horário do dia, além de conferir informações importantes, como vendas totais e médias de avaliações de clientes. A aplicação é uma ferramenta útil para gerentes de vendas e tomadores de decisão, pois permite identificar rapidamente padrões e tendências nos dados de vendas.</p>
+
+                              <h2>Como o código funciona</h2>
+                              <p>O código começa importando as bibliotecas necessárias, como Pandas para manipulação de dados, Plotly e Graph_objs para criação de gráficos e Streamlit para criação de aplicativos web. Em seguida, é configurada a página do aplicativo com um título, ícone e layout.</p>
+                              <p>A função "@st.cache" é usada para armazenar em cache o resultado da leitura de um arquivo do Excel, evitando a leitura repetitiva de dados não alterados.</p>
+                              <p>Em seguida, são criados filtros de seleção de dados na barra lateral. Esses filtros permitem que o usuário selecione cidades, tipos de clientes e gênero. Depois, é executada uma consulta nos dados do Excel com base nesses filtros.</p>
+                              <p>A página principal exibe três principais indicadores de desempenho, como vendas totais, classificação média e vendas médias por transação. Em seguida, o código cria dois gráficos de barras, um mostrando as vendas por linha de produto e outro mostrando as vendas por hora. Além disso, um gráfico de pizza e um gráfico de linhas são criados para visualização de dados. Os gráficos são plotados em duas colunas, com um gráfico em cada coluna.</p>
+                              <p>Por fim, é definida uma função "show_st_style" para exibir o cabeçalho, rodapé e menu do Streamlit na página.</p>
+
+                              <ul>
+                                <li>Vendas por Linha de Produto [Gráfico de Barras]: Este gráfico de barras mostra as vendas totais por linha de produto. Cada barra representa uma linha de produto, sendo que a altura da barra indica as vendas totais para aquela linha de produto. A cor das barras é consistente e representa um código de cor para todas as barras do gráfico.</li>
+                                 <li>Vendas por Hora [Gráfico de Barras]: Este gráfico de barras mostra as vendas totais para cada hora do dia. O eixo x representa as horas do dia, e o eixo y representa as vendas totais para cada hora. Cada barra representa uma hora, sendo que a altura da barra indica as vendas totais para aquela hora. A cor das barras é consistente e representa um código de cor para todas as barras do gráfico.</li>
+                                 <li>Vendas por Linha de Produto [Gráfico de Pizza]: Este gráfico de pizza mostra a porcentagem de vendas totais para cada linha de produto. Cada fatia representa uma linha de produto, sendo que o tamanho da fatia indica a porcentagem de vendas totais para aquela linha de produto. A legenda do lado direito do gráfico fornece informações sobre a cor de cada fatia.</li>
+                                 <li>Vendas por Hora [Gráfico de Linhas]: Este gráfico de linhas mostra as vendas totais para cada hora do dia. O eixo x representa as horas do dia, e o eixo y representa as vendas totais para cada hora. A linha representa as vendas totais para cada hora, sendo que a trajetória da linha indica a tendência geral de vendas ao longo do dia.</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                 <figure style="display:flex; justify-content:center; align-items:center;"><img src="assets/images/Sales_Dashboard_2.jpeg"></figure>
+                  <div class="ds-work-content-sec">
+                      <div class="row justify-content-center">
+                          <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                              <p>Os gráficos de barras são divididos em dois painéis, sendo o primeiro mostrando as vendas por hora e o segundo mostrando as vendas por linha de produto. Além disso, há três KPIs na parte superior do painel: Vendas Totais, Classificação Média e Vendas Médias por Transação. Eles fornecem informações resum</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+     </div>
+   </main>
+
+   <!--  footer -->
+   <footer class="ds-footer text-center">
+     <div class="container">
+        <section>
+          <span>Stay in touch</span>
+          <h4>Ready to talk?</h4>
+          <p>Feel free to contact</p>
+          <a href="lucashs.work@gmail.com" class="ds-button">Lets Talk</a>
+        </section>
+        <span class="ds-copyright">© 2023 All rights reserved. Free minimal bootstrap template by <a href="https://www.linkedin.com/in/lucashs-work/" target="_blank">Lucas H.</a>.</span>
+     </div>
+   </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
